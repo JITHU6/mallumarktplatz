@@ -176,3 +176,4 @@ see the request, the action, each Supabase call with its status, and the recorde
 Phase 2: reviews & ratings (table already exists), verification document upload, email notifications to owners on
 approval/rejection. Phase 3: jobs, events, housing, classifieds, premium/sponsored listings, other EU countries
 (`country_code` columns are already in place).
+# mallumarktplatz
