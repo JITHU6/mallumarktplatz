@@ -1,0 +1,11 @@
+# Local trace viewer for development.
+#   docker compose -f observability/docker-compose.yml up -d
+#   then set OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318 in .env.local and restart `npm run dev`
+#   UI: http://localhost:16686  (service: mallumarktplatz)
+services:
+  jaeger:
+    image: jaegertracing/jaeger:2.11.0
+    ports:
+      - "16686:16686" # Jaeger UI
+      - "4318:4318"   # OTLP over HTTP
+    restart: unless-stopped
